@@ -6,10 +6,11 @@ export const style = StyleSheet.create({
         flex: 1, 
         alignItems: "center",
         justifyContent: 'flex-end',
+        backgroundColor: '#00008b',
     },
     boxTop: {
         height: Dimensions.get('window').height/3,
-        width: '20%',
+        width: '100%',
         //backgroundColor: 'white',
         alignItems: 'center',
        
@@ -22,10 +23,10 @@ export const style = StyleSheet.create({
         //alignContent: 'center',
     },
     boxBotton:{
-        height: Dimensions.get('window').height/3,
-        width: '50%',
+        height: Dimensions.get('window').height/4,
+        width: '30%',
         alignItems: "center",
-        //backgroundColor: 'blue',
+        
     },
     Logo:{ width: 150,
         height: 360,
@@ -33,38 +34,22 @@ export const style = StyleSheet.create({
 
     },
     text:{
-        fontWeight: 'bold',
-        marginTop: 10,
+        fontWeight: 'condensed',
+        marginTop: 15,
         fontSize: 18,
+        color: '#00ced1',
         
         
     },
  
-    button:{
-        width: 30,
-        height: 30,
-        alignItems: "center",
-        backgroundColor: themas.colors.lightGray,
-        borderRadius: 40,
-        justifyContent: "center",
-        shadowColor: "#000",
-        shadowOffset: {
-	        width: 0,
-	        height: 9,
-        },
-        shadowOpacity: 0.50,
-        shadowRadius: 12.35,
-        elevation: 19,
-
-    },
     textbutton:{
         fontSize: 10,
-        color: 'blue',
+        color: '#00bfff',
         fontWeight: 'bold',
     },
     textcriar:{
         fontSize: 20,
-        color: 'blue',
+        color: '#00ffff',
     
     }
 

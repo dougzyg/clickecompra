@@ -7,7 +7,7 @@ export const style = StyleSheet.create({
         width: 250,
         height: 50,
         alignItems: "center",
-        backgroundColor: 'blue',
+        backgroundColor: '#1e90ff',
         borderRadius: 40,
         justifyContent: "center",
         shadowColor: "#000",
@@ -22,11 +22,11 @@ export const style = StyleSheet.create({
     },
     textbutton:{
         fontSize: 16,
-        color: 'blue',
+        color: '#4169e1',
         fontWeight: 'bold',
     },
     textButton:{
-        color: themas.colors.bgScreen,
+        color: '#191970',
 
     }
 })

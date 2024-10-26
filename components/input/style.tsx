@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { View, Text } from "react-native";
-import { themas } from "../global/themes";
+import { themas } from "../../global/themes";
 
 export const style = StyleSheet.create({
     BoxInput:{
@@ -13,7 +13,7 @@ export const style = StyleSheet.create({
         alignItems: "center",
         paddingHorizontal: 5,
         backgroundColor: themas.colors.lightGray,
-        borderColor: themas.colors.lightGray,
+        borderColor: themas.colors.gray,
     },
     input:{
         height:'100%',

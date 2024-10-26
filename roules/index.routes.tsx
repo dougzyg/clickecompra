@@ -2,6 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../pages/login/index';
 import BottomRoules from './bottom.roules'
+import CreateProduct from '../pages/criarProd';
 
 export default function Routes() {
     const Stack = createStackNavigator();
@@ -24,6 +25,10 @@ export default function Routes() {
              <Stack.Screen 
                 name="BottomRoules"
                 component={BottomRoules} // Outro componente
+            />
+            <Stack.Screen 
+                name="CreateProduct"
+                component={CreateProduct}
             />
         </Stack.Navigator>
     );

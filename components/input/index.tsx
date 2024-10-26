@@ -1,6 +1,6 @@
 import React, { forwardRef, Fragment, LegacyRef } from "react";
 import {View, Text, TextInput, TextInputProps, TouchableOpacity} from 'react-native';
-import {style} from "../style";
+import {style} from "./style";
 import { themas } from "../../global/themes";
 import { FontAwesome, MaterialIcons, Octicons } from '@expo/vector-icons';
 

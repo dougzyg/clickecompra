@@ -26,7 +26,7 @@ export default function Login() {
             navigation.navigate("BottomRoules")
 
             console.log('Logado com sucesso');
-            // Adicione aqui a lógica de login (ex: chamada de API)
+    
         } catch (error) {
             console.error('Erro ao fazer login:', error);
         }finally{
@@ -43,7 +43,7 @@ export default function Login() {
                     resizeMode='contain'
                 />
             </View>
-            <Text style={style.text}>CLICK&COMPRA</Text>
+            <Text style={style.text}>CLICK & COMPRA</Text>
             <Text style={style.text}>Bem-vindo de volta</Text>
             <View style={style.boxMid}>
                 <Input
