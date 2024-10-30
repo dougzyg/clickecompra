@@ -1,35 +1,21 @@
-import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import Login from '../pages/login/index';
-import BottomRoules from './bottom.roules'
-import CreateProduct from '../pages/criarProd';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import List from '../pages/list/index';
+import User from '../pages/users/user';
+import CustomTabBar from '../components/CustomTabBar';
 
-export default function Routes() {
-    const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
-    return (
-        <Stack.Navigator
-            initialRouteName="Login"
-            screenOptions={{
-                headerShown: false,
-                cardStyle:{
-                    backgroundColor:"#fff"
-                }
-            }}
-            >
-            {/* Defina a rota para suas telas */}
-            <Stack.Screen
-                name="Login"
-                component={Login} // Componente que será renderizado
-            />
-             <Stack.Screen 
-                name="BottomRoules"
-                component={BottomRoules} // Outro componente
-            />
-            <Stack.Screen 
-                name="CreateProduct"
-                component={CreateProduct}
-            />
-        </Stack.Navigator>
-    );
+export default function BottomRoules() {
+  return (
+    <Tab.Navigator 
+      screenOptions={{
+        headerShown:false
+      }}
+      tabBar={props=><CustomTabBar {...props}/>}
+
+    >
+      <Tab.Screen name="List" component={List} />
+      <Tab.Screen name="User" component={User} />
+    </Tab.Navigator>
+  );
 }

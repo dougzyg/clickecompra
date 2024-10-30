@@ -1,20 +1,16 @@
-import '../gesture-handler'
-import { StyleSheet, Text, View } from 'react-native';
-
-import Routes from '../roules/index.routes'
+import React from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
+import Routes from '../roules/index.routes'; // Adjust the path accordingly
 
+const App = () => {
+    return (
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <NavigationContainer>
+                <Routes />
+            </NavigationContainer>
+        </GestureHandlerRootView>
+    );
+};
 
-export default function App() {
-  return (
-     <NavigationContainer>
-      <Routes />
-     </NavigationContainer>
-   );
-}
-
-const styles = StyleSheet.create({
-  container:{
-   flex: 1
-  }
-});
+export default App;

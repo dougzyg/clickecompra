@@ -3,7 +3,9 @@ import { Text, View } from 'react-native';
 import { style } from "./style";
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import { TouchableOpacity } from "react-native-gesture-handler";
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, FontAwesome, Entypo } from '@expo/vector-icons';
+
+
 
 const CustomTabBar: React.FC<BottomTabBarProps> = ({ state, navigation, descriptors }) => {
     return (
@@ -28,10 +30,10 @@ const CustomTabBar: React.FC<BottomTabBarProps> = ({ state, navigation, descript
                             <AntDesign name="bars" style={{ fontSize: 32 }} color={isFocused ? 'blue' : 'gray'} />
                         )}
                         {route.name === 'User' && (
-                            <AntDesign name="user" style={{ fontSize: 32 }} color={isFocused ? 'blue' : 'gray'} />
+                            <Entypo name="plus" style={{ fontSize: 32 }} color={isFocused ? 'blue' : 'gray'} />
                         )}
-                        {route.name === 'CreateProduct' && (
-                            <AntDesign name="bars" style={{ fontSize: 32 }} color={isFocused ? 'blue' : 'gray'} />
+                        {route.name === 'Anuncio' && (
+                            <FontAwesome name= "bars" style={{ fontSize: 32 }} color={isFocused ? 'blue' : 'gray'} />
                         )}
                     </TouchableOpacity>
                 );

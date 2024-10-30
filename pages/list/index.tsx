@@ -1,11 +1,17 @@
-import React from 'react'
-import {Text} from "react-native";
-import CreateProduct from '../criarProd';
+import React, { useEffect, useState } from 'react';
+import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
+
 
 export default function List(){
+    
+    
+
     return(
-        <Text>
-            kkkkkkkkkkkkkkkkkkkkkkkk
-        </Text>
+        <View>
+            <Text>
+                kkkkkkkkkkkkk
+            </Text>
+        </View>
     )
-}
+}       
+    
